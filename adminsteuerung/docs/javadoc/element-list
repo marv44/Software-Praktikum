@@ -1,0 +1,4 @@
+module:de.thkoeln.swp.wawi.adminsteuerung
+de.thkoeln.swp.wawi.adminsteuerung.grenzklassen
+de.thkoeln.swp.wawi.adminsteuerung.impl
+de.thkoeln.swp.wawi.adminsteuerung.services

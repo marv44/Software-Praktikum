@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thkoeln.swp.wawi.admingui.controllers.AdminController">
+   <center>
+      <ScrollPane prefHeight="510.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="940.0">
+               <children>
+                  <GridPane gridLinesVisible="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="25.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="100" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints prefHeight="85" vgrow="SOMETIMES" />
+                      <RowConstraints prefHeight="85" vgrow="SOMETIMES" />
+                      <RowConstraints prefHeight="85" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Pane prefHeight="85.0" prefWidth="400.0">
+                           <children>
+                              <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Pflanzen] Kaktus gelagert in Köln">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="630.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01.05.2020" textAlignment="RIGHT" wrappingWidth="199.1875">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <ScrollPane layoutX="10.0" layoutY="40.0" prefHeight="60.0" prefWidth="820.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="800.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." textOrigin="TOP" wrappingWidth="800.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                              <Text layoutX="10.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13,37€" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="150.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MwSt. 19%" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="320.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Stück" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#2cd73a" layoutX="470.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aktiv" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="610.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2c6c99;" text="Bearbeiten" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="730.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #9c0e0e;" text="Löschen" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="85.0" prefWidth="400.0" GridPane.rowIndex="1">
+                           <children>
+                              <TextArea layoutX="10.0" layoutY="45.0" prefHeight="60.0" prefWidth="820.0" promptText="Beschreibung" text="Neue Beschreibung" />
+                              <TextField layoutX="10.0" layoutY="110.0" prefHeight="24.0" prefWidth="60.0" promptText="Preis" text="10">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Text layoutX="630.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01.05.2020" textAlignment="RIGHT" wrappingWidth="199.1875">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="150.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MwSt." textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="385.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stück" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#2cd73a" layoutX="470.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aktiv" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="610.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2c6c99;" text="Speichern" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="730.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #666666;" text="Abbrechen" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="78.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="283.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <TextField layoutX="220.0" layoutY="110.0" prefHeight="31.0" prefWidth="60.0" promptText="MwSt. Satz" text="10">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField layoutX="320.0" layoutY="110.0" prefHeight="31.0" prefWidth="60.0" promptText="Stücl" text="10">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField layoutX="200.0" layoutY="10.0" promptText="Name" text="Neuer Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <ComboBox layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="175.0" promptText="Kategorie" />
+                              <ComboBox layoutX="385.0" layoutY="10.0" prefHeight="28.0" prefWidth="175.0" promptText="Lagerort" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="164.0" prefHeight="85.0" prefWidth="400.0" GridPane.rowIndex="2">
+                           <children>
+                              <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Spielwaren] LEGO Star Wars gelagert in Hamburg">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="630.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01.05.2020" textAlignment="RIGHT" wrappingWidth="199.1875">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Text>
+                              <ScrollPane layoutX="10.0" layoutY="40.0" prefHeight="60.0" prefWidth="820.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="800.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." textOrigin="TOP" wrappingWidth="800.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <Text layoutX="10.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13,37€" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="150.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MwSt. 19%" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="320.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 Stück" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#e42626" layoutX="470.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inaktiv" textOrigin="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="610.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #9c0e0e #9c0e0e;" text="Bestätigen" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="730.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #666666;" text="Abbrechen" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Pane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+   <top>
+      <Pane prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #707070;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="210.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin GUI - Produktliste" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="540.0">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button layoutX="775.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #2c6c99 #2c6c99;" text="Produkt erstellen" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Pane layoutX="50.0" layoutY="50.0" prefHeight="50.0" prefWidth="860.0">
+               <children>
+                  <ComboBox layoutX="210.0" layoutY="10.0" prefHeight="30.0" prefWidth="120.0" promptText="weniger als" />
+                  <TextField layoutX="340.0" layoutY="10.0" prefHeight="30.0" prefWidth="70.0" promptText="Anzahl">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="WHITE" layoutX="-8.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wenn Stückzahl ist" textOrigin="TOP">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="500.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #2c6c99 #2c6c99;" text="Anzeigen" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="600.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: #d08e22;" text="Deaktivieren" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="430.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dann">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button layoutX="50.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2c6c99;" text="Hauptmenü" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

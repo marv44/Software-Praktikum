@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #707070;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.thkoeln.swp.wawi.admingui.controllers.KategorienController">
+    <top>
+        <Pane prefHeight="68" prefWidth="266.0" style="-fx-background-color: #707070;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="210.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Admin GUI - Kategorien" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="540.0">
+                    <font>
+                        <Font size="32.0"/>
+                    </font>
+                </Text>
+                <Button layoutX="775.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0"
+                        style="-fx-background-color: #2c6c99 #2c6c99; -fx-cursor: hand" text="Kategorie erstellen"
+                        textFill="WHITE" onAction="#createCategory">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="50.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="32.0"
+                        prefWidth="100.0" style="-fx-background-color: #2c6c99; -fx-cursor: hand" text="Hauptmenü"
+                        textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </top>
+    <center>
+
+    </center>
+    <left>
+        <Pane prefHeight="487.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="-5.0" layoutY="-3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategorien"
+                      textAlignment="CENTER" textOrigin="TOP" wrappingWidth="389.134765625" x="10.0" y="10.0">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </Text>
+                <Button layoutX="315.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0"
+                        style="-fx-background-color: #2c6c99 #2c6c99; -fx-cursor: hand;" text="Neu laden"
+                        textFill="WHITE" onAction="#loadCategories"/>
+                <TreeView fx:id="categoryList" layoutY="41.0" prefHeight="431.0" prefWidth="400.0"/>
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane prefHeight="423.0" prefWidth="560.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="540"
+                                    fx:id="anchorPane">
+                            <children>
+                                <Text fx:id="categoryName" strokeType="OUTSIDE" strokeWidth="0.0" textOrigin="TOP"
+                                      x="10.0" y="10.0">
+                                    <font>
+                                        <Font size="26.0"/>
+                                    </font>
+                                </Text>
+                                <Text fx:id="categoryDescription" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      textOrigin="TOP" wrappingWidth="530" x="10.0" y="50.0">
+                                    <font>
+                                        <Font size="17.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <ToolBar layoutY="422.0" prefHeight="50.0" prefWidth="560.0" fx:id="buttonBar">
+                    <items>
+                        <Button mnemonicParsing="false" onAction="#createSubCategory"
+                                style="-fx-background-color: #2c6c99 #2c6c99 #2c6c99 #2c6c99 #2c6c99 #2c6c99 #2c6c99 #2c6c99; -fx-cursor: hand;"
+                                text="Unterkategorie erstellen" textFill="WHITE"/>
+                        <Button mnemonicParsing="false" onAction="#editCategory"
+                                style="-fx-background-color: #2c6c99 #2c6c99 #2c6c99 #2c6c99; -fx-cursor: hand;"
+                                text="Kategorie bearbeiten" textFill="WHITE"/>
+                        <Button mnemonicParsing="false" onAction="#deleteCategory"
+                                style="-fx-background-color: #9c0e0e#9c0e0e; -fx-cursor: hand;" text="Kategorie löschen"
+                                textFill="WHITE"/>
+                    </items>
+                </ToolBar>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

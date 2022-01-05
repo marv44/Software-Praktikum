@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #707070;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thkoeln.swp.wawi.admingui.controllers.AdminController">
+    <top>
+        <Label prefHeight="68.0" text="Admin GUI - Kategorien" textFill="WHITE" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <font>
+                <Font size="32.0" />
+            </font></Label>
+    </top>
+   <left>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2c6c99;" text="Hauptmenü" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d08e22;" text="Neue Kategorie" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #a0b7d8;" text="Kategorien anzeigen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #2788a5;" text="Kategorie bearbeiten" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #9c0e0e;" text="Kategorie löschen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </FlowPane>
+   </left>
+   <center>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="Kategorie 1" />
+          <TitledPane animated="false" text="Kategorie 2">
+               <content>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Kategorie 3" />
+                      <TitledPane animated="false" text="Kategorie 4">
+                           <content>
+                              <Accordion>
+                                <panes>
+                                  <TitledPane animated="false" text="Kategorie 5" />
+                                  <TitledPane animated="false" text="Kategorie 6">
+                                       <content>
+                                          <Accordion>
+                                            <panes>
+                                              <TitledPane animated="false" text="Kathegorie 7" />
+                                              <TitledPane animated="false" style="-fx-background-color: #a0d4d8;" text="neue Kategorie">
+                                                   <content>
+                                                      <Accordion>
+                                                        <panes>
+                                                          <TitledPane animated="false" text="Kategorie 8" />
+                                                          <TitledPane animated="false" text="Kategorie 9" />
+                                                        </panes>
+                                                      </Accordion>
+                                                   </content>
+                                                </TitledPane>
+                                            </panes>
+                                          </Accordion>
+                                       </content>
+                                    </TitledPane>
+                                </panes>
+                              </Accordion>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </center>
+</BorderPane>

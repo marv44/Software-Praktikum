@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox layoutX="10.0" layoutY="5.0" prefWidth="150.0" promptText="Kategorie" />
+            <TextField layoutX="220.0" layoutY="225.0" promptText="MwSt." />
+            <TextArea layoutX="10.0" layoutY="115.0" prefHeight="100.0" prefWidth="570.0" promptText="Beschreibung" />
+            <TextField layoutX="10.0" layoutY="260.0" promptText="Stück" />
+            <TextField layoutX="10.0" layoutY="80.0" promptText="Name" />
+            <TextField layoutX="10.0" layoutY="225.0" promptText="Preis" />
+            <Button layoutX="429.0" layoutY="291.0" mnemonicParsing="false" style="-fx-background-color: #2c6c99;" text="Erstellen" textFill="WHITE" />
+            <Button layoutX="506.0" layoutY="291.0" mnemonicParsing="false" style="-fx-background-color: #9c0e0e;" text="Abbrechen" textFill="WHITE" />
+            <CheckBox layoutX="10.0" layoutY="295.0" mnemonicParsing="false" text="Aktiv" />
+            <ComboBox layoutX="10.0" layoutY="40.0" prefWidth="150.0" promptText="Lagerort" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="68.0" prefWidth="200.0" style="-fx-background-color: #707070;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="128.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin GUI - Produkt erstellen">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

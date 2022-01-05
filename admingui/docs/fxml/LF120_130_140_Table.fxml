@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thkoeln.swp.wawi.admingui.controllers.AdminController">
+   <top>
+      <Pane prefHeight="68.0" prefWidth="960.0" style="-fx-background-color: #707070;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="297.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin GUI - Lieferverkehr">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button layoutX="34.0" layoutY="19.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2c6c99;" text="Hauptmenü" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker layoutX="22.0" layoutY="37.0" maxHeight="29.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="106.0" />
+            <DatePicker layoutX="22.0" layoutY="89.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="106.0" />
+            <Text layoutX="27.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Von">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="27.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bis">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button layoutX="21.0" layoutY="402.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2c6c99;" text="Details" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <CheckBox layoutX="26.0" layoutY="132.0" mnemonicParsing="false" text="Einlieferung">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <CheckBox layoutX="26.0" layoutY="169.0" mnemonicParsing="false" text="Bestellung">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <TextField layoutX="38.0" layoutY="220.0" prefHeight="25.0" prefWidth="98.0" />
+            <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView prefHeight="373.0" prefWidth="810.0">
+              <columns>
+                  <TableColumn prefWidth="147.0" text="ID" />
+                <TableColumn minWidth="0.0" prefWidth="372.0" text="Typ" />
+                <TableColumn prefWidth="290.0" text="Gesamtpreis" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
